@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B624BEC928CFC3C4003E26B1 /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BEC828CFC3C4003E26B1 /* PhrasesView.swift */; };
+		B624BECA28CFC3C4003E26B1 /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BEC828CFC3C4003E26B1 /* PhrasesView.swift */; };
+		B624BECC28CFC3D7003E26B1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BECB28CFC3D7003E26B1 /* HistoryView.swift */; };
+		B624BECD28CFC3D7003E26B1 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BECB28CFC3D7003E26B1 /* HistoryView.swift */; };
+		B624BECF28CFC3E7003E26B1 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BECE28CFC3E7003E26B1 /* GalleryView.swift */; };
+		B624BED028CFC3E7003E26B1 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B624BECE28CFC3E7003E26B1 /* GalleryView.swift */; };
 		B66D39FC28BABB150045FD1E /* SpiqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D39EC28BABB140045FD1E /* SpiqueApp.swift */; };
 		B66D39FD28BABB150045FD1E /* SpiqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D39EC28BABB140045FD1E /* SpiqueApp.swift */; };
 		B66D39FE28BABB150045FD1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D39ED28BABB140045FD1E /* ContentView.swift */; };
 		B66D39FF28BABB150045FD1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D39ED28BABB140045FD1E /* ContentView.swift */; };
 		B66D3A0028BABB150045FD1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66D39EE28BABB150045FD1E /* Assets.xcassets */; };
 		B66D3A0128BABB150045FD1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66D39EE28BABB150045FD1E /* Assets.xcassets */; };
-		B66D3A0B28BACDF70045FD1E /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0A28BACDF70045FD1E /* PhrasesView.swift */; };
-		B66D3A0C28BACDF70045FD1E /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0A28BACDF70045FD1E /* PhrasesView.swift */; };
+		B66D3A0B28BACDF70045FD1E /* PhraseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0A28BACDF70045FD1E /* PhraseListView.swift */; };
+		B66D3A0C28BACDF70045FD1E /* PhraseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0A28BACDF70045FD1E /* PhraseListView.swift */; };
 		B66D3A0E28BACE5A0045FD1E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0D28BACE5A0045FD1E /* SidebarView.swift */; };
 		B66D3A0F28BACE5A0045FD1E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A0D28BACE5A0045FD1E /* SidebarView.swift */; };
 		B66D3A1128BB18AA0045FD1E /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1028BB18AA0045FD1E /* Phrase.swift */; };
@@ -23,23 +29,33 @@
 		B66D3A1628BC540E0045FD1E /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = B66D3A1428BC540E0045FD1E /* database.json */; };
 		B66D3A1928BC55B10045FD1E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1828BC55B10045FD1E /* Store.swift */; };
 		B66D3A1A28BC55B10045FD1E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1828BC55B10045FD1E /* Store.swift */; };
-		B66D3A1C28BC6AA00045FD1E /* PhrasesTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1B28BC6AA00045FD1E /* PhrasesTileView.swift */; };
-		B66D3A1D28BC6AA00045FD1E /* PhrasesTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1B28BC6AA00045FD1E /* PhrasesTileView.swift */; };
+		B66D3A1C28BC6AA00045FD1E /* PhraseTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1B28BC6AA00045FD1E /* PhraseTile.swift */; };
+		B66D3A1D28BC6AA00045FD1E /* PhraseTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D3A1B28BC6AA00045FD1E /* PhraseTile.swift */; };
+		B6C2BC0A28EFD86E00CE69C0 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = B6C2BC0928EFD86E00CE69C0 /* Introspect */; };
+		B6C2BC0C28EFF87B00CE69C0 /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2BC0B28EFF87B00CE69C0 /* MultiLineTextField.swift */; };
+		B6C2BC0D28EFF87B00CE69C0 /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2BC0B28EFF87B00CE69C0 /* MultiLineTextField.swift */; };
+		B6C2BC0F28F1331300CE69C0 /* SpeakNowBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2BC0E28F1331300CE69C0 /* SpeakNowBar.swift */; };
+		B6C2BC1028F1331300CE69C0 /* SpeakNowBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2BC0E28F1331300CE69C0 /* SpeakNowBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B624BEC828CFC3C4003E26B1 /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
+		B624BECB28CFC3D7003E26B1 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B624BECE28CFC3E7003E26B1 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		B66D39EC28BABB140045FD1E /* SpiqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiqueApp.swift; sourceTree = "<group>"; };
 		B66D39ED28BABB140045FD1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B66D39EE28BABB150045FD1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66D39F328BABB150045FD1E /* Spique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66D39F928BABB150045FD1E /* Spique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66D39FB28BABB150045FD1E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		B66D3A0A28BACDF70045FD1E /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
+		B66D3A0A28BACDF70045FD1E /* PhraseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseListView.swift; sourceTree = "<group>"; };
 		B66D3A0D28BACE5A0045FD1E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		B66D3A1028BB18AA0045FD1E /* Phrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
 		B66D3A1428BC540E0045FD1E /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
 		B66D3A1828BC55B10045FD1E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		B66D3A1B28BC6AA00045FD1E /* PhrasesTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesTileView.swift; sourceTree = "<group>"; };
+		B66D3A1B28BC6AA00045FD1E /* PhraseTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseTile.swift; sourceTree = "<group>"; };
+		B6C2BC0B28EFF87B00CE69C0 /* MultiLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTextField.swift; sourceTree = "<group>"; };
+		B6C2BC0E28F1331300CE69C0 /* SpeakNowBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakNowBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C2BC0A28EFD86E00CE69C0 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +93,14 @@
 				B66D3A1328BC53BE0045FD1E /* Resources */,
 				B66D39EC28BABB140045FD1E /* SpiqueApp.swift */,
 				B66D39ED28BABB140045FD1E /* ContentView.swift */,
+				B6C2BC0E28F1331300CE69C0 /* SpeakNowBar.swift */,
+				B6C2BC0B28EFF87B00CE69C0 /* MultiLineTextField.swift */,
+				B624BECE28CFC3E7003E26B1 /* GalleryView.swift */,
+				B624BECB28CFC3D7003E26B1 /* HistoryView.swift */,
+				B624BEC828CFC3C4003E26B1 /* PhrasesView.swift */,
 				B66D3A0D28BACE5A0045FD1E /* SidebarView.swift */,
-				B66D3A0A28BACDF70045FD1E /* PhrasesView.swift */,
-				B66D3A1B28BC6AA00045FD1E /* PhrasesTileView.swift */,
+				B66D3A0A28BACDF70045FD1E /* PhraseListView.swift */,
+				B66D3A1B28BC6AA00045FD1E /* PhraseTile.swift */,
 				B66D39EE28BABB150045FD1E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -134,6 +156,9 @@
 			dependencies = (
 			);
 			name = "Spique (iOS)";
+			packageProductDependencies = (
+				B6C2BC0928EFD86E00CE69C0 /* Introspect */,
+			);
 			productName = "Spique (iOS)";
 			productReference = B66D39F328BABB150045FD1E /* Spique.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +207,9 @@
 				Base,
 			);
 			mainGroup = B66D39E628BABB140045FD1E;
+			packageReferences = (
+				B6C2BC0828EFD86E00CE69C0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = B66D39F428BABB150045FD1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -221,10 +249,15 @@
 				B66D39FE28BABB150045FD1E /* ContentView.swift in Sources */,
 				B66D3A1128BB18AA0045FD1E /* Phrase.swift in Sources */,
 				B66D3A0E28BACE5A0045FD1E /* SidebarView.swift in Sources */,
+				B6C2BC0C28EFF87B00CE69C0 /* MultiLineTextField.swift in Sources */,
 				B66D3A1928BC55B10045FD1E /* Store.swift in Sources */,
 				B66D39FC28BABB150045FD1E /* SpiqueApp.swift in Sources */,
-				B66D3A1C28BC6AA00045FD1E /* PhrasesTileView.swift in Sources */,
-				B66D3A0B28BACDF70045FD1E /* PhrasesView.swift in Sources */,
+				B624BEC928CFC3C4003E26B1 /* PhrasesView.swift in Sources */,
+				B66D3A1C28BC6AA00045FD1E /* PhraseTile.swift in Sources */,
+				B624BECC28CFC3D7003E26B1 /* HistoryView.swift in Sources */,
+				B6C2BC0F28F1331300CE69C0 /* SpeakNowBar.swift in Sources */,
+				B66D3A0B28BACDF70045FD1E /* PhraseListView.swift in Sources */,
+				B624BECF28CFC3E7003E26B1 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +268,15 @@
 				B66D39FF28BABB150045FD1E /* ContentView.swift in Sources */,
 				B66D3A1228BB18AA0045FD1E /* Phrase.swift in Sources */,
 				B66D3A0F28BACE5A0045FD1E /* SidebarView.swift in Sources */,
+				B6C2BC0D28EFF87B00CE69C0 /* MultiLineTextField.swift in Sources */,
 				B66D3A1A28BC55B10045FD1E /* Store.swift in Sources */,
 				B66D39FD28BABB150045FD1E /* SpiqueApp.swift in Sources */,
-				B66D3A1D28BC6AA00045FD1E /* PhrasesTileView.swift in Sources */,
-				B66D3A0C28BACDF70045FD1E /* PhrasesView.swift in Sources */,
+				B624BECA28CFC3C4003E26B1 /* PhrasesView.swift in Sources */,
+				B66D3A1D28BC6AA00045FD1E /* PhraseTile.swift in Sources */,
+				B624BECD28CFC3D7003E26B1 /* HistoryView.swift in Sources */,
+				B6C2BC1028F1331300CE69C0 /* SpeakNowBar.swift in Sources */,
+				B66D3A0C28BACDF70045FD1E /* PhraseListView.swift in Sources */,
+				B624BED028CFC3E7003E26B1 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,6 +540,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6C2BC0828EFD86E00CE69C0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6C2BC0928EFD86E00CE69C0 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6C2BC0828EFD86E00CE69C0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B66D39E728BABB140045FD1E /* Project object */;
 }

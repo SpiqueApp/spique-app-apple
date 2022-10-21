@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct ContentView: View {
     @EnvironmentObject var store: Store
     @State var searchText: String = ""
 
     var body: some View {
+        #if os(macOS)
         NavigationView {
             SidebarView()
                 .frame(minWidth: 250)
@@ -19,7 +21,7 @@ struct ContentView: View {
                 PhrasesView()
                     .frame(minWidth: 250, maxWidth: .infinity, maxHeight: .infinity)
                 if (store.showMessages) {
-                    MessagesPanel()
+                    HistoryView()
                         .frame(minWidth: 250, idealWidth: 300, maxHeight: .infinity)
                 }
             }
@@ -40,6 +42,9 @@ struct ContentView: View {
                 Image(systemName: "waveform.circle")
             }
         }
+        #else
+        SpiqueTabBar()
+        #endif
     }
 }
 
@@ -49,46 +54,80 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct MessagesPanel: View {
-    var body: some View {
-        VStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 5) {
-                    Spacer()
-                    Message(text: "Hi, how are you?")
-                    Message(text: "That is nice!")
-                    Message(text: "I am doing great, thanks for asking.")
+#if os(iOS)
 
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
+struct Blur: UIViewRepresentable {
+    var style: UIBlurEffect.Style = .systemChromeMaterial
+
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        return UIVisualEffectView(effect: UIBlurEffect(style: style))
+    }
+
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        uiView.effect = UIBlurEffect(style: style)
+    }
+}
+
+struct SpiqueTabBar: View {
+    private enum Tab: Hashable {
+        case phrases
+        case history
+        case gallery
+    }
+    @EnvironmentObject var obj: observed
+    @State private var text = ""
+    @State private var selectedTab: Tab = .phrases
+
+    var body: some View {
+        TabView(selection: $selectedTab) {
+            Group {
+                PhrasesView()
+                    .tag(0)
+                    .tabItem {
+                        Text("Phrases")
+                        Image(systemName: "text.bubble.fill")
+                    }
+
+                HistoryView()
+                    .tag(1)
+                    .tabItem {
+                        Text("History")
+                        Image(systemName: "clock.arrow.circlepath")
+                    }
+
+                GalleryView()
+                    .tag(2)
+                    .tabItem {
+                        Text("Gallery")
+                        Image(systemName: "sparkles.rectangle.stack.fill")
+                    }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            HStack {
-                Text("Input here")
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 8)
-                    .cornerRadius(20)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white, lineWidth: 1)
-                    )
+            .safeAreaInset(edge: .bottom) {
+                SpeakNowBar()
             }
-            .padding()
+        }
+        .scrollDismissesKeyboard(.immediately)
+        .navigationTitle("Test")
+
+        .introspectTabBarController { controller in
+             controller.tabBar.backgroundImage = .init()
+             controller.tabBar.clipsToBounds = true
         }
     }
 }
+
+#endif
 
 struct Message: View {
     let text: String
 
     var body: some View {
         Text(text)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 5)
+            .foregroundColor(.white)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 7)
             .background(.blue)
-            .cornerRadius(20)
+            .cornerRadius(13)
     }
 }
 

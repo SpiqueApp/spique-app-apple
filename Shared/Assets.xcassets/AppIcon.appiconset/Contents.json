@@ -1,148 +1,74 @@
 {
-  "images": [
+  "images" : [
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "size": "20x20"
+      "filename" : "Icon.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "size": "20x20"
+      "filename" : "Icon-macos-16.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "16x16"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "size": "29x29"
+      "filename" : "Icon-macos-32 1.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "16x16"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "size": "29x29"
+      "filename" : "Icon-macos-32.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "32x32"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "size": "40x40"
+      "filename" : "Icon-macos-64.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "32x32"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "size": "40x40"
+      "filename" : "Icon-macos-128.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "128x128"
     },
     {
-      "idiom": "iphone",
-      "scale": "2x",
-      "size": "60x60"
+      "filename" : "Icon-macos-256 1.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "128x128"
     },
     {
-      "idiom": "iphone",
-      "scale": "3x",
-      "size": "60x60"
+      "filename" : "Icon-macos-256.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "256x256"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "size": "20x20"
+      "filename" : "Icon-macos-512 1.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "256x256"
     },
     {
-      "idiom": "ipad",
-      "scale": "2x",
-      "size": "20x20"
+      "filename" : "Icon-macos-512.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "512x512"
     },
     {
-      "idiom": "ipad",
-      "scale": "1x",
-      "size": "29x29"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "2x",
-      "size": "29x29"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "1x",
-      "size": "40x40"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "2x",
-      "size": "40x40"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "1x",
-      "size": "76x76"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "2x",
-      "size": "76x76"
-    },
-    {
-      "idiom": "ipad",
-      "scale": "2x",
-      "size": "83.5x83.5"
-    },
-    {
-      "idiom": "ios-marketing",
-      "scale": "1x",
-      "size": "1024x1024"
-    },
-    {
-      "idiom": "mac",
-      "scale": "1x",
-      "size": "16x16"
-    },
-    {
-      "idiom": "mac",
-      "scale": "2x",
-      "size": "16x16"
-    },
-    {
-      "idiom": "mac",
-      "scale": "1x",
-      "size": "32x32"
-    },
-    {
-      "idiom": "mac",
-      "scale": "2x",
-      "size": "32x32"
-    },
-    {
-      "idiom": "mac",
-      "scale": "1x",
-      "size": "128x128"
-    },
-    {
-      "idiom": "mac",
-      "scale": "2x",
-      "size": "128x128"
-    },
-    {
-      "idiom": "mac",
-      "scale": "1x",
-      "size": "256x256"
-    },
-    {
-      "idiom": "mac",
-      "scale": "2x",
-      "size": "256x256"
-    },
-    {
-      "idiom": "mac",
-      "scale": "1x",
-      "size": "512x512"
-    },
-    {
-      "idiom": "mac",
-      "scale": "2x",
-      "size": "512x512"
+      "filename" : "Icon-macos-1024.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "512x512"
     }
   ],
-  "info": {
-    "author": "xcode",
-    "version": 1
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
   }
 }

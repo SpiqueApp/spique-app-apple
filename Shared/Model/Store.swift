@@ -11,6 +11,8 @@ class Store: ObservableObject {
     @Published var phrases: [Phrase] = []
     @Published var selectedPrase: Phrase.ID?
     @Published var showMessages: Bool = true
+    @Published var speakNowText: String = ""
+//    @Published var speakNowText: String = "The first time you have a chanceat the game you will have a good time playing with the"
 //    @Published var mode: PhrasesView.ViewMode = .table
 
     private var applicationSupportDirectory: URL {
